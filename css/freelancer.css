@@ -36,6 +36,8 @@ h6 {
     font-weight: 700;
 }
 
+hr.slider-light,
+hr.slider-primary,
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -57,19 +59,34 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
+hr.slider-light:after,
+hr.slider-primary:after {
+    content: "\f1de";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.slider-light,
 hr.star-light {
     border-color: #fff;
 }
 
+hr.slider-light:after,
 hr.star-light:after {
     color: #fff;
     background-color: #18bc9c;
 }
 
+hr.slider-primary,
 hr.star-primary {
     border-color: #2c3e50;
 }
 
+hr.slider-primary:after,
 hr.star-primary:after {
     color: #2c3e50;
     background-color: #fff;
