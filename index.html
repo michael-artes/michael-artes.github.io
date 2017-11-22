@@ -1,524 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 
-<head>
+<html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	   <!--- basic page needs
+	   ================================================== -->
+	   <meta charset="utf-8">
+		<title>Full Stack Developer - Michaels</title>
+		<meta name="description" content="Single Page Developer">  
+		<meta name="author" content="Michael Douglas">
 
-    <title>MD Arte Final</title>
+	   <!-- mobile specific metas
+	   ================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	 	<!-- CSS
+	   ================================================== -->
+	   <link rel="stylesheet" href="css/base.css">  
+	   <link rel="stylesheet" href="css/main.css">
+	   <link rel="stylesheet" href="css/vendor.css">     
 
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+	   <!-- script
+	   ================================================== -->   
+		<script src="js/modernizr.js"></script>
+		<script src="js/pace.min.js"></script>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	   <!-- favicons
+		================================================== -->
+		<link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	</head>
 
-</head>
+	<body id="top">
 
-<body id="page-top" class="index">
+	   <section id="intro">   
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">MD Arte Final</a>
-            </div>
+	   	<div class="intro-overlay"></div>	
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfólio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Quem Sou</a>
-                    </li>
-                    <!-- <li class="page-scroll">
-                        <a href="#contact">Contato</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+	   	<div class="intro-content">
+	   		<div class="row">
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profle.png" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
+	   			<div class="col-twelve">
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfólio</h2>
-                    <hr class="slider-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout1.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout2.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout3.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout4.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/layout5.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+		   			<h5>Hello, World.</h5>
+		   			<h1>I'm Michael Douglas.</h1>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Quem Sou...</h2>
-                    <hr class="slider-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <p>
-                      <img src="https://s.gravatar.com/avatar/6742ab0b05ff7235e7ce51ad3f80e994?s=80&r=r" class="img-circle"><br>
-                      Meu nome é Michael Douglas, tenho 22 anos e sou formado em Análise e Desenvolvimento de Sistemas.
-                      Atualmento Trabalho na empresa <br />
-                      <a href="http://www.lemontech.com.br/" target="_blank">
-                          www.lemontech.com.br
-                      </a>
-                    </p>
-                </div>
-                <div class="col-lg-4 text-center">
-                  <p>
-                    Tenho experiência com: <br /> (Java, JavaScript, Frameworks MVC - (Mentawai - Vraptor - Spring), Jquery, PostgreSQL, Webservices, JSF, HTML, CSS).
-                    Como o mercado de TI está em constante evolução, sou do tipo de profissional que não para no tempo, gosto muito de sempre está estudando e aprendendo novas tecnologias.
-                  </p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <p>Trabalhei quase 3 anos como design em gráfica, realizando diversos tipos de trabalho na área. Conheço bem ferramentas como: CorelDraw e Photoshop. <br> Realizo alguns trabalhos como freelancer quando surge oportunidades tanto como analista/desenvolvedor como design.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+		   			<p class="intro-position">
+		   				<span>Full Stack Web Developer</span>
+		   				<span>Design</span>
+		   			</p>
 
-    <!-- Contact Section -->
-    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+		   			<!-- <a class="button stroke smoothscroll" href="#about" title="">More About Me</a> -->
 
-    <!-- <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Nome</label>
-                                <input type="text" class="form-control" placeholder="Nome..." id="name" required data-validation-required-message="Necessário informar um nome...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email..." id="email" required data-validation-required-message="Necessário informar um e-mail...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Telefone</label>
-                                <input type="tel" class="form-control" placeholder="Telefone..." id="phone" required data-validation-required-message="Necessário informar um Telefone...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensagem..." id="message" required data-validation-required-message="Necessário informar uma mensagem de texto."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
+		   		</div>  
+	   			
+	   		</div>   		 		
+	   	</div> <!-- /intro-content --> 
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Contato</h3>
-                        <p>
-                            Fone: (66) 9923-6950
-                            <br> <a href="mailto:mmoreira.dg@gmail.com">mmoreira.dg@gmail.com</a>
-                            <br> Sorriso/MT, CEP 78890-000
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Por aí na web...</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/michael.md.artes" target="_blank" class="btn-social btn-outline">
-                                    <i class="fa fa-fw fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/ArtesMichael" target="_blank" class="btn-social btn-outline">
-                                    <i class="fa fa-fw fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/michael-artes" target="_blank" class="btn-social btn-outline">
-                                    <i class="fa fa-fw fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <i class="fa fa-3x fa-ellipsis-h"></i>
-                        <p>"Cada sonho que você deixa para trás, é um pedaço do seu futuro que deixa de existir. (Steve Jobs)"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; MD Arte Final 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+	   	<ul class="intro-social">        
+	   		 <li><a href="https://github.com/michael-artes" target="_blank"><i class="fa fa-github"></i></a></li>
+	         <li><a href="https://www.facebook.com/michael.md.artes" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	         <li><a href="https://twitter.com/mmoreira_dg" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	         <li><a href="https://www.instagram.com/mmoreira.dg/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	      </ul> <!-- /intro-social -->      	
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+	   </section> <!-- /intro -->
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Ministério de Teatro</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong>Igreja IBN</strong>
-                                </li>
-                                <li>Data:
-                                    <strong>2015</strong>
-                                </li>
-                                <li>Serviço:
-                                    <strong>Identidade Visual</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Eletro Maxstron</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout1.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong>Eletro Maxstron</strong>
-                                </li>
-                                <li>Data:
-                                    <strong>2015</strong>
-                                </li>
-                                <li>Serviço:
-                                    <strong>Identidade Visual</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Terra Agrícola</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout2.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong>Terra Agrícola</strong>
-                                </li>
-                                <li>Data:
-                                    <strong>2015</strong>
-                                </li>
-                                <li>Serviço:
-                                    <strong>Identidade Visual</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Godiva Salão de Beleza</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout3.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                                <li>Cliente:
-                                    <strong>Godiva</strong>
-                                </li>
-                                <li>Data:
-                                    <strong>2015</strong>
-                                </li>
-                                <li>Serviço:
-                                    <strong>Identidade Visual</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Conema Acessórios</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout4.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                              <li>Cliente:
-                                  <strong>Conema Acessórios</strong>
-                              </li>
-                              <li>Data:
-                                  <strong>2015</strong>
-                              </li>
-                              <li>Serviço:
-                                  <strong>Identidade Visual</strong>
-                              </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Logomarca Potrich Transportes</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/layout5.png" class="img-responsive img-centered" alt="">
-                            <ul class="list-inline item-details">
-                              <li>Cliente:
-                                  <strong>Potrich Transportes</strong>
-                              </li>
-                              <li>Data:
-                                  <strong>2015</strong>
-                              </li>
-                              <li>Serviço:
-                                  <strong>Identidade Visual</strong>
-                              </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+	   <div id="preloader"> 
+	    	<div id="loader"></div>
+	   </div> 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+	   <!-- Java Script
+	   ================================================== --> 
+	   <script src="js/jquery-2.1.3.min.js"></script>
+	   <script src="js/plugins.js"></script>
+	   <script src="js/main.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
-</body>
+	</body>
 
 </html>
